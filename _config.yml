@@ -70,4 +70,4 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/Wood-Water-Peng/Wood-Water-Peng.github.io.git
-  branch: origin
+  branch: master
