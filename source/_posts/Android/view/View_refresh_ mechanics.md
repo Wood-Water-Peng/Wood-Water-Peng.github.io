@@ -1,15 +1,15 @@
 
 ---
-layout: post  
-title: "View刷新的几个问题"  
-excerpt: "基于问题驱动"  
-tags:   
-- View  
-- Android  
-categories:   
-- Android   
-comments: true  
-share: true  
+layout: post
+title: "View刷新的几个问题"
+excerpt: "基于问题驱动"
+tags: 
+- View
+- Android
+categories:
+- Android
+comments: true
+share: true
 ---
 
 
@@ -20,7 +20,8 @@ share: true
 > Android中的代码都是通过消息驱动的，MainLooper中存储了UI线程所有要执行的消息。如果消息队列中已经没有消息了，那么线程会休眠，当新的消息来临时，UI线程会被唤醒去执行消息。如果用户_停留在那个页面什么也没做_，我们可以认为View树的数据没有更新，那么也就不会去重新measure,layout,draw了。但是屏幕是16ms刷新一次，所以屏幕刷新的是View树上一次的缓存数据。
 
 <!--![](view刷新机制_01.png)-->
-<img src="/images/View/view刷新机制_01.png">
+
+<img src="/images/View/View_refresh_ mechanics.png">
 
 **问：App中的掉帧是什么原因？**
 
